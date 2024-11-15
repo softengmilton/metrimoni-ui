@@ -1,3 +1,21 @@
+// import BannerImage1 from '../../assets/images/banner/banner1.jpg';
+// import BannerImage2 from '../../assets/images/banner/banner2.jpg';
+
+// export const IMAGE = {
+//     BANNERIMAGE1: BannerImage1 ,
+//     BANNERIMAGE2: BannerImage2 ,
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 export const addLeadingZero = (number) => {
     return number < 10 ? `0${number}` : number;
