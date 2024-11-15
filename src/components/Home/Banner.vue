@@ -37,6 +37,16 @@ const banners = [
 
 
 
+
+
+
+const mount = () => {
+    slicker();
+}
+
+
+onMounted(mount);
+
 const slicker = () => {
     if (slider.value) {
         $(slider.value).slick({
@@ -68,14 +78,6 @@ const slicker = () => {
         });
     }
 }
-
-const mount = () => {
-    slicker();
-}
-
-
-onMounted(mount);
-
 onBeforeUnmount(() => {
     if (slider.value) {
         $(slider.value).slick('unslick');

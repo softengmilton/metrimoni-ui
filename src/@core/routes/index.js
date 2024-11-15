@@ -1,8 +1,10 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
 
 import Home from '../../Views/Home/Index.vue'
 import Explore from '../../Views/Explore/Index.vue'
 import Pricing from '../../Views/Pricing/Index.vue'
+import Login from '../../Views/Auth/Login.vue'
+import SignUp from '../../Views/Auth/Signup.vue'
 
 const routes = [
   {
@@ -29,10 +31,26 @@ const routes = [
       title:'Pricing'
     }
   },
+  {
+    path: '/login',
+    component: Login,
+    name: 'Login',
+    meta: {
+      title:'Login'
+    }
+  },
+    {
+    path: '/signup',
+    component: SignUp,
+    name: 'SignUp',
+    meta: {
+      title:'SignUp'
+    }
+  },
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 })
 

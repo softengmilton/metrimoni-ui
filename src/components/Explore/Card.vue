@@ -4,7 +4,7 @@
             <!--PROFILE IMAGE-->
             <div class="pro-img">
                 <a href="profile-details.html">
-                    <img src="../assets/images/profiles/4.jpg" alt="">
+                    <img src="../../assets/images/profiles/4.jpg" alt="">
                 </a>
                 <div class="pro-ave" title="User currently available">
                     <span class="pro-ave-yes"></span>
@@ -44,7 +44,7 @@
             <!--PROFILE IMAGE-->
             <div class="pro-img">
                 <a href="profile-details.html">
-                    <img src="../assets/images/profiles/10.jpg" alt="">
+                    <img src="../../assets/images/profiles/10.jpg" alt="">
                 </a>
                 <div class="pro-ave" title="User currently available">
                     <span class="pro-ave-yes"></span>
@@ -85,7 +85,7 @@
             <!--PROFILE IMAGE-->
             <div class="pro-img">
                 <a href="profile-details.html">
-                    <img src="../assets/images/profiles/11.jpg" alt="">
+                    <img src="../../assets/images/profiles/11.jpg" alt="">
                 </a>
                 <div class="pro-ave" title="User currently available">
                     <span class="pro-ave-yes"></span>
@@ -127,7 +127,7 @@
             <!--PROFILE IMAGE-->
             <div class="pro-img">
                 <a href="profile-details.html">
-                    <img src="../assets/images/profiles/12.jpg" alt="">
+                    <img src="../../assets/images/profiles/12.jpg" alt="">
                 </a>
                 <div class="pro-ave" title="User currently available">
                     <span class="pro-ave-yes"></span>
@@ -169,7 +169,7 @@
             <!--PROFILE IMAGE-->
             <div class="pro-img">
                 <a href="profile-details.html">
-                    <img src="../assets/images/profiles/13.jpg" alt="">
+                    <img src="../../assets/images/profiles/13.jpg" alt="">
                 </a>
                 <div class="pro-ave" title="User currently available">
                     <span class="pro-ave-yes"></span>

@@ -11,7 +11,7 @@
                                 <h2>Now <b>Find <br> your life partner</b> Easy and fast.</h2>
                             </div>
                             <div class="im">
-                                <img src="../assets/images/login-couple.png" alt="">
+                                <img src="../../assets/images/login-couple.png" alt="">
                             </div>
                             <div class="log-bg">&nbsp;</div>
                         </div>
