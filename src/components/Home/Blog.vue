@@ -14,7 +14,7 @@
                         <ul>
                             <li>
                                 <div class="blog-box">
-                                    <img src="../assets/images/blog/1.jpg" alt="" loading="lazy">
+                                    <img src="../../assets/images/blog/1.jpg" alt="" loading="lazy">
                                     <span>Wedding - Johnny</span>
                                     <h2>Wedding arrangements</h2>
                                     <p>It is a long established fact that a reader will be distracted by the readable
@@ -24,7 +24,7 @@
                             </li>
                             <li>
                                 <div class="blog-box">
-                                    <img src="../assets/images/blog/2.jpg" alt="" loading="lazy">
+                                    <img src="../../assets/images/blog/2.jpg" alt="" loading="lazy">
                                     <span>Wedding - Johnny</span>
                                     <h2>Wedding arrangements</h2>
                                     <p>It is a long established fact that a reader will be distracted by the readable
@@ -34,7 +34,7 @@
                             </li>
                             <li>
                                 <div class="blog-box">
-                                    <img src="../assets/images/blog/3.jpg" alt="" loading="lazy">
+                                    <img src="../../assets/images/blog/3.jpg" alt="" loading="lazy">
                                     <span>Wedding - Johnny</span>
                                     <h2>Invitation cards</h2>
                                     <p>It is a long established fact that a reader will be distracted by the readable
