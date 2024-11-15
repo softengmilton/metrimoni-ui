@@ -1,12 +1,16 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import 'bootstrap'
+import './assets/styles/css/animate.min.css'
 import './assets/styles/css/bootstrap.css'
 import './assets/styles/css/style.css'
 import router from './@core/routes/index.js'
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
-
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel'; 
+import * as $ from 'jquery'; 
 
 
 const app = createApp(App);
