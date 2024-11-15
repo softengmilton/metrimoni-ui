@@ -11,7 +11,7 @@
     <Service />
     <!-- END -->
 
-    <!-- Service -->
+    <!-- Review -->
     <Review />
     <!-- END -->
 

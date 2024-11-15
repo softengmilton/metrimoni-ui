@@ -18,7 +18,7 @@
                         <span class="tit-ani-"></span>
                     </div>
                     <div class="home-acces">
-                        <ul class="hom-qui-acc-sli" ref="carouselRef" v-if="isCarouselVisible">
+                        <ul class="hom-qui-acc-sli">
                             <li>
                                 <div class="wow fadeInUp hacc hacc1" data-wow-delay="0.1s">
                                     <div class="con">
@@ -87,10 +87,3 @@
     </section>
     <!-- END -->
 </template>
-<script setup>
-import { serviceCarosual } from '../../@core/composables/serviceCarosual';
-
-const { carouselRef, isCarouselVisible } = serviceCarosual();
-
-
-</script>

@@ -123,3 +123,9 @@ function initSlick() {
     });
 }
 </script>
+
+<style scoped>
+::v-deep .slick-list.draggable {
+    overflow: visible;
+}
+</style>
