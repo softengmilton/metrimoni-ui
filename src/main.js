@@ -9,8 +9,9 @@ import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel'; 
 import * as $ from 'jquery'; 
+import 'slick-carousel'; 
+
 
 
 const app = createApp(App);
