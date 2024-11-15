@@ -7,8 +7,8 @@
                     <div class="col-lg-6">
                         <div class="ab-wel-lhs">
                             <span class="ab-wel-3"></span>
-                            <!-- <img src="images/about/1.jpg" alt="" loading="lazy" class="ab-wel-1">
-                            <img src="images/couples/20.jpg" alt="" loading="lazy" class="ab-wel-2"> -->
+                            <img src="../../assets/images/about/1.jpg" alt="" loading="lazy" class="ab-wel-1">
+                            <img src="../../assets/images/couples/20.jpg" alt="" loading="lazy" class="ab-wel-2">
                             <span class="ab-wel-4"></span>
                         </div>
                     </div>

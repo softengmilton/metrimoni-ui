@@ -15,7 +15,7 @@
                             <li>
                                 <div class="cus-revi-box">
                                     <div class="revi-im">
-                                        <!-- <img src="images/user/1.jpg" alt="" loading="lazy"> -->
+                                        <img src="../../assets/images/user/1.jpg" alt="" loading="lazy">
                                         <i class="cir-com cir-1"></i>
                                         <i class="cir-com cir-2"></i>
                                         <i class="cir-com cir-3"></i>
@@ -29,7 +29,7 @@
                             <li>
                                 <div class="cus-revi-box">
                                     <div class="revi-im">
-                                        <!-- <img src="images/user/2.jpg" alt="" loading="lazy"> -->
+                                        <img src="../../assets/images/user/2.jpg" alt="" loading="lazy">
                                         <i class="cir-com cir-1"></i>
                                         <i class="cir-com cir-2"></i>
                                         <i class="cir-com cir-3"></i>
@@ -43,7 +43,7 @@
                             <li>
                                 <div class="cus-revi-box">
                                     <div class="revi-im">
-                                        <!-- <img src="images/user/3.jpg" alt="" loading="lazy"> -->
+                                        <img src="../../assets/images/user/3.jpg" alt="" loading="lazy">
                                         <i class="cir-com cir-1"></i>
                                         <i class="cir-com cir-2"></i>
                                         <i class="cir-com cir-3"></i>
@@ -57,7 +57,7 @@
                             <li>
                                 <div class="cus-revi-box">
                                     <div class="revi-im">
-                                        <!-- <img src="images/user/5.jpg" alt="" loading="lazy"> -->
+                                        <img src="../../assets/images/user/5.jpg" alt="" loading="lazy">
                                         <i class="cir-com cir-1"></i>
                                         <i class="cir-com cir-2"></i>
                                         <i class="cir-com cir-3"></i>
@@ -79,3 +79,47 @@
     </section>
     <!-- END -->
 </template>
+<script setup>
+import { onMounted } from 'vue';
+
+
+
+
+
+
+
+
+
+
+onMounted(() => {
+    initSlick();
+});
+
+function initSlick() {
+    $('.slider3').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        infinite: true,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+}
+</script>

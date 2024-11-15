@@ -18,7 +18,7 @@
                         <span class="tit-ani-"></span>
                     </div>
                     <div class="home-acces">
-                        <ul class="hom-qui-acc-sli" ref="carousel">
+                        <ul class="hom-qui-acc-sli" ref="carouselRef" v-if="isCarouselVisible">
                             <li>
                                 <div class="wow fadeInUp hacc hacc1" data-wow-delay="0.1s">
                                     <div class="con">
@@ -87,65 +87,10 @@
     </section>
     <!-- END -->
 </template>
-<script>
-export default {
-    name: 'ServiceCarousel',
-    data() {
-        return {
-            isSlickInitialized: false,
-            isCarouselVisible: true,
-        };
-    },
-    mounted() {
-        this.initCarousel();
-        window.addEventListener('resize', this.handleResize);
-    },
-    beforeDestroy() {
-        window.removeEventListener('resize', this.handleResize);
-        if (this.isSlickInitialized) {
-            $(this.$refs.carousel).slick('unslick');
-        }
-    },
-    methods: {
-        handleResize() {
-            if (window.innerWidth < 990 && this.isSlickInitialized) {
-                this.isCarouselVisible = false;
-                $(this.$refs.carousel).slick('unslick');
-                this.isSlickInitialized = false;
-            } else if (window.innerWidth >= 990 && !this.isSlickInitialized) {
-                this.isCarouselVisible = true;
-                this.initCarousel();
-            }
-        },
-        initCarousel() {
-            $(this.$refs.carousel).slick({
-                infinite: true,
-                speed: 300,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                centerMode: true,
-                focusOnSelect: true,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        },
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        },
-                    },
-                ],
-            });
-            this.isSlickInitialized = true;
-        }
-    }
-};
+<script setup>
+import { serviceCarosual } from '../../@core/composables/serviceCarosual';
+
+const { carouselRef, isCarouselVisible } = serviceCarosual();
+
+
 </script>

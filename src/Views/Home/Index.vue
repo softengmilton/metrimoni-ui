@@ -1,54 +1,34 @@
 <template>
     <!-- SEARCH -->
-    <Search/>
+    <Search />
     <!-- END -->
 
     <!-- BANNER & SEARCH -->
-    <Banner/>
+    <Banner />
     <!-- END -->
 
     <!-- Service -->
-    <Service/>
+    <Service />
     <!-- END -->
 
     <!-- Service -->
-    <Review/>
-    <!-- END -->
-
-    <!-- Service -->
-    <Promo/>
+    <Review />
     <!-- END -->
 
     <!-- About -->
-    <About/>
+    <About />
     <!-- END -->
 
     <!-- Counter -->
-    <Counter/>
+    <Counter />
     <!-- END -->
 
     <!-- Moment -->
-    <Moment/>
-    <!-- END -->
-
-    <!-- Moment -->
-    <RecentCouple/>
-    <!-- END -->
-
-    <!-- Team -->
-    <Team/>
-    <!-- END -->
-
-    <!-- Gallery -->
-    <Gallery/>
-    <!-- END -->
-
-    <!-- Blog -->
-    <Blog/>
+    <Moment />
     <!-- END -->
 
     <!-- BottomBanner -->
-    <BottomBanner/>
+    <BottomBanner />
     <!-- END -->
 
 </template>
