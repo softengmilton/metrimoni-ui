@@ -1,6 +1,6 @@
 <template>
     <!-- SUB HEADING -->
-    <Heading />
+    <Heading @toggle-modal="handleModalToggle" />
     <!-- END -->
 
     <!-- START -->
@@ -9,7 +9,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <Sidebar />
+                        <Sidebar :visible="isSidebarVisible" @close="handleSidebarClose" />
                     </div>
                     <div class="col-md-9">
                         <div class="short-all">
@@ -61,8 +61,20 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import Heading from '../../components/Explore/Heading.vue'
 import Sidebar from '../../components/Explore/Sidebar.vue';
 import Card from '../../components/Explore/Card.vue';
 import ChatBox from '../../components/Explore/ChatBox.vue';
+
+
+const isSidebarVisible = ref(false);
+
+function handleModalToggle() {
+    isSidebarVisible.value = !isSidebarVisible.value;
+}
+
+function handleSidebarClose() {
+    isSidebarVisible.value = false; // Close the sidebar when the close event is emitted
+}
 </script>

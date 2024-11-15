@@ -56,8 +56,11 @@
                         <span class="menu desk-menu">
                             <i></i><i></i><i></i>
                         </span>
-                        <a href="index.html" class="logo-brand"><img src="../assets/images/logo-b.png" alt=""
-                                loading="lazy" class="ic-logo"></a>
+                        <router-link to="/" class="logo-brand">
+                            <a href="index.html" class="logo-brand"><img src="../assets/images/logo-b.png" alt=""
+                                    loading="lazy" class="ic-logo">
+                            </a>
+                        </router-link>
                     </div>
 
                     <!-- EXPLORE MENU -->

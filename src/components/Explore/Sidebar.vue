@@ -1,6 +1,6 @@
 <template>
-    <div class="fil-mob-view">
-        <span class="filter-clo">+</span>
+    <div class="fil-mob-view" id="fil-mob-view">
+        <span class="filter-clo" @click="closeModal">+</span>
         <!-- START -->
         <div class="filt-com lhs-cate">
             <h4><i class="fa fa-search" aria-hidden="true"></i> I'm looking for</h4>
@@ -120,3 +120,132 @@
     </div>
     <!-- END -->
 </template>
+
+<script setup>
+import { defineProps, defineEmits, watch, ref } from 'vue';
+
+const props = defineProps({
+    visible: {
+        type: Boolean,
+        default: false
+    }
+});
+const isVisible = ref();
+
+const emit = defineEmits(['close']);
+
+function closeModal() {
+    emit('close');
+}
+
+
+
+
+
+
+
+watch(() => props.visible, (newValue) => {
+    isVisible.value = newValue;
+    const element = document.getElementById('fil-mob-view');
+    if (newValue === true) {
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
+    }
+});
+</script>
+
+<style scoped>
+@media screen and (max-width: 769px) {
+    .fil-mob-view {
+        margin-top: 50px;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        overflow-x: auto;
+        padding: 40px 30px;
+        background-color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0 0 0;
+        width: 100%;
+        transform: translateY(0);
+        opacity: 1;
+        display: none;
+        max-height: 90vh;
+
+        /* Hidden by default */
+    }
+
+    .fil-mob-view[style*="display: block"] {
+        display: block;
+    }
+
+    /* Improve select dropdown appearance */
+    .chosen-select {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        background-color: #f9f9f9;
+    }
+
+    .filter-clo {
+        font-size: 28px;
+        color: #333;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* Style headings and labels */
+    h4 {
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .form-group select {
+        background-color: #fafafa;
+        border-radius: 8px;
+        border: 1px solid #e0e0e0;
+        padding: 10px;
+    }
+
+    /* More polished radio button and label styles */
+    .rbbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .rbbox input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    .rbbox label {
+        font-size: 14px;
+        color: #555;
+    }
+
+    /* Smooth hover effects on query button */
+    .filt-send-query a {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .filt-send-query a:hover {
+        background-color: #0056b3;
+    }
+}
+</style>

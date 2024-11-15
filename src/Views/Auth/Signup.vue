@@ -23,13 +23,13 @@
                                 </div>
 
                                 <!-- Step Form -->
-                                <el-steps :active="active" finish-status="success">
+                                <!-- <el-steps :active="active" finish-status="success">
                                     <el-step title="Basic Info" />
                                     <el-step title="Personal Details" />
                                     <el-step title="Family Details" />
                                     <el-step title="Spouse Expectations" />
                                     <el-step title="Final Details" />
-                                </el-steps>
+                                </el-steps> -->
 
                                 <div class="form-login">
                                     <form @submit.prevent="submitForm">
