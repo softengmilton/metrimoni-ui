@@ -6,7 +6,7 @@
         <div class="inn">
             <form name="new_chat_form" method="post">
                 <div class="s1">
-                    <img src="../assets/images/user/2.jpg" class="intephoto2" alt="">
+                    <img src="../../assets/images/user/2.jpg" class="intephoto2" alt="">
                     <h4><b class="intename2">Julia</b>,</h4>
                     <span class="avlsta avilyes">Available online</span>
                 </div>
