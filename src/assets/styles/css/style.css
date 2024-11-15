@@ -10133,16 +10133,16 @@ h2.db-tit{
 /* When the browser is between 0px and 1100px wide,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width:1100px) {
-    .al {
-        display: none;
-    }
 
+    .al {
+        margin-left: 135px;
+    }
     .hom-nav .bl ul {
         float: right;
     }
 
     .hom-nav .bl {
-        width: calc(100% - 300px);
+        width: calc(100% - 600px);
         padding: 0px 0 0px 40px;
     }
 
@@ -10324,6 +10324,9 @@ h2.db-tit{
 /* When the browser is between 0px and 992px wide,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width:992px) {
+    .al {
+        display: none;
+    }
     .pg-soon .tit h1 {
         font-size: 60px;
         line-height: 80px;
